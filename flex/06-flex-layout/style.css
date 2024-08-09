@@ -9,6 +9,10 @@ body {
 
 img {
   width: 600px;
+  align-self:center;
+  flex-direction:column;
+  margin:4px;
+  margin-bottom:20px;
 }
 
 button {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  margin:4px;
+  font-size:18px;
 }
 
 input {
@@ -23,4 +29,71 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  align-self:center;
+  flex-direction:column;
+  margin-bottom:20px;
+}
+
+.header {
+  display:flex;
+  gap:10px;
+  justify-content:space-between;
+  padding:5px;
+  margin:5px;
+}
+
+.left-links {
+  display:flex;
+  gap:20px;
+  padding-left:10px;
+}
+
+.right-links {
+  display:flex;
+  gap:20px;
+  padding-right:10px;
+}
+
+div {
+  display:flex;
+}
+
+.footer {
+  display:flex;
+  height:25px;
+  background-color:#eeeeee;
+  align-items:flex-start;
+  justify-content:space-between;
+  margin:4px;
+  padding:5px;
+  flex:1;
+}
+
+.content {
+  flex-direction:column;
+  align-items:center;
+  flex:7;
+  justify-content:center;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.buttons {
+  gap:10px;
+  padding:10px;
+}
+
+/* removes bullet points from all unordered lists */
+ul {
+  list-style-type:none;
+}
+
+/* removes underline from all links ....or a attributes */
+a {
+  text-decoration:none;
+  color:black;
 }
